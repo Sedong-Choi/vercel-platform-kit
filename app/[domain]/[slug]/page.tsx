@@ -8,6 +8,11 @@ import db from "@/lib/db";
 import { posts, sites } from "@/lib/schema";
 import { eq } from "drizzle-orm";
 
+
+// build 후 빌드된 파일을 캐싱하지 않고, 매 요청마다 새로운 파일을 생성
+export const dynamic = 'force-dynamic';
+
+
 export async function generateMetadata({
   params,
 }: {
