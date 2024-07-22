@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import { Metadata } from "next";
 import { cn } from "@/lib/utils";
 
+export const runtime="edge";
 const title =
   "Platforms Starter Kit – The all-in-one starter kit for building multi-tenant applications.";
 const description =
